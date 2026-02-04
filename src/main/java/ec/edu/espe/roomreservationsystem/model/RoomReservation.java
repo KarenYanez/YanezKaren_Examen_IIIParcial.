@@ -45,6 +45,7 @@ public class RoomReservation {
         this.status = ReservationStatus.CONFIRMED;
     }
 
+    //Estado de reserva
     public enum ReservationStatus {
         CREATED,
         CONFIRMED

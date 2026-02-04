@@ -116,6 +116,7 @@ public class ReservationServiceTest {
         int hours = 3;
 
         // Usuario NO está bloqueado
+        //Devuelve
         when(userPolicyClient.isUserBlocked(email)).thenReturn(false);
 
         // Room YA está reservada
