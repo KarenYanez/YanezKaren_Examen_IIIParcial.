@@ -37,6 +37,7 @@ public class ReservationService {
         }
 
         // Validación: No se puede crear una reserva si la sala ya se encuentra reservada
+        // Validación: No se puede crear una reserva si la sala ya se encuentra reservada
         if (reservationRepository.existsByRoomCode(roomCode)) {
             throw new IllegalStateException("room is already reserved");
         }
